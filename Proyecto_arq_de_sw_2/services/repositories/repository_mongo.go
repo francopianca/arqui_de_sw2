@@ -3,9 +3,15 @@ package repositories
 import (
 	"context"
 	"fmt"
-	"github.com/francopianca/arqui_de_sw2/tree/main/ej-books/dtos"
-	model "github.com/francopianca/arqui_de_sw2/tree/main/ej-books/models"
+
+	"log"
+	"time"
+
+	"github.com/pedrofernandezmz/Arq-Software2/dtos"
+	model "github.com/pedrofernandezmz/Arq-Software2/models"
+
 	e "github.com/francopianca/arqui_de_sw2/tree/main/ej-books/utils/errors"
+	amqp "github.com/rabbitmq/amqp091-go"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
