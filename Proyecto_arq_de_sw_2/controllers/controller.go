@@ -1,11 +1,12 @@
 package controllers
 
 import (
-	"github.com/francopianca/arqui_de_sw2/tree/main/ej-books/dtos"
-	service "github.com/francopianca/arqui_de_sw2/tree/main/ej-books/services"
-	e "github.com/francopianca/arqui_de_sw2/tree/main/ej-books/utils/errors"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/francopianca/arqui_de_sw2/tree/main/Proyecto_arq_de_sw_2/dtos"
+	service "github.com/francopianca/arqui_de_sw2/tree/main/Proyecto_arq_de_sw_2/services"
+	e "github.com/francopianca/arqui_de_sw2/tree/main/Proyecto_arq_de_sw_2/utils/errors"
+	"github.com/gin-gonic/gin"
 )
 
 type Controller struct {
