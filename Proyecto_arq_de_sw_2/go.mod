@@ -1,4 +1,4 @@
-module github.com/francopianca/arqui_de_sw2
+module github.com/francopianca/arqui_de_sw2/tree/main/ej-books
 
 go 1.17
 
@@ -7,6 +7,7 @@ require (
 	github.com/gin-gonic/gin v1.8.1
 	github.com/json-iterator/go v1.1.12
 	github.com/karlseguin/ccache/v2 v2.0.8
+	github.com/francopianca/arqui_de_sw2 v0.0.0-20221114033936-16705b7b21ad
 	github.com/rabbitmq/amqp091-go v1.5.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/stevenferrer/solr-go v0.3.2

@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/pedrofernandezmz/Arq-Software2/dtos"
-	e "github.com/pedrofernandezmz/Arq-Software2/utils/errors"
+	"github.com/francopianca/arqui_de_sw2/dtos"
+	e "github.com/francopianca/arqui_de_sw2/utils/errors"
 )
 
 type Service interface {

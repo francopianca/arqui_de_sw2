@@ -1,11 +1,12 @@
 package controllers
 
-import (	
-	"github.com/pedrofernandezmz/Arq-Software2/dtos"
-	service "github.com/pedrofernandezmz/Arq-Software2/services"
-	e "github.com/pedrofernandezmz/Arq-Software2/utils/errors"
-	"github.com/gin-gonic/gin"
+import (
 	"net/http"
+
+	"github.com/francopianca/arqui_de_sw2/dtos"
+	service "github.com/francopianca/arqui_de_sw2/services"
+	e "github.com/francopianca/arqui_de_sw2/utils/errors"
+	"github.com/gin-gonic/gin"
 )
 
 type Controller struct {

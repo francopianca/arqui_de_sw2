@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/pedrofernandezmz/Arq-Software2/app"
+	"github.com/francopianca/arqui_de_sw2/app"
 )
 
 func main() {

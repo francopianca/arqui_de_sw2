@@ -7,10 +7,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/pedrofernandezmz/Arq-Software2/dtos"
-	model "github.com/pedrofernandezmz/Arq-Software2/models"
+	"github.com/francopianca/arqui_de_sw2/dtos"
+	model "github.com/francopianca/arqui_de_sw2/models"
 
-	e "github.com/pedrofernandezmz/Arq-Software2/utils/errors"
+	e "github.com/francopianca/arqui_de_sw2/utils/errors"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -75,7 +75,7 @@ func (repo *RepositoryMongoDB) Get(id string) (dtos.ItemDTO, e.ApiError) {
 		Id:          id,
 		Titulo:      item.Titulo,
 		Descripcion: item.Descripcion,
-		Direccion:	 item.Direccion,
+		Direccion:   item.Direccion,
 		Ciudad:      item.Ciudad,
 		Provincia:   item.Provincia,
 		Imagen:      item.Imagen,
@@ -88,7 +88,7 @@ func (repo *RepositoryMongoDB) Insert(item dtos.ItemDTO) (dtos.ItemDTO, e.ApiErr
 	result, err := repo.Database.Collection(repo.Collection).InsertOne(context.TODO(), model.Item{
 		Titulo:      item.Titulo,
 		Descripcion: item.Descripcion,
-		Direccion:	 item.Direccion,
+		Direccion:   item.Direccion,
 		Ciudad:      item.Ciudad,
 		Provincia:   item.Provincia,
 		Imagen:      item.Imagen,
@@ -126,7 +126,7 @@ func (repo *RepositoryMongoDB) Update(item dtos.ItemDTO) (dtos.ItemDTO, e.ApiErr
 	_, err := repo.Database.Collection(repo.Collection).UpdateByID(context.TODO(), fmt.Sprintf("%v", item.Id), model.Item{
 		Titulo:      item.Titulo,
 		Descripcion: item.Descripcion,
-		Direccion:	 item.Direccion,
+		Direccion:   item.Direccion,
 		Ciudad:      item.Ciudad,
 		Provincia:   item.Provincia,
 		Imagen:      item.Imagen,

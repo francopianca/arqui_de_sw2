@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/pedrofernandezmz/Arq-Software2/dtos"
-	"github.com/pedrofernandezmz/Arq-Software2/services/repositories"
-	e "github.com/pedrofernandezmz/Arq-Software2/utils/errors"
+	"github.com/francopianca/arqui_de_sw2/dtos"
+	"github.com/francopianca/arqui_de_sw2/services/repositories"
+	e "github.com/francopianca/arqui_de_sw2/utils/errors"
 )
 
 type ServiceImpl struct {

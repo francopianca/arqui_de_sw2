@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/francopianca/arqui_de_sw2/dtos"
+	e "github.com/francopianca/arqui_de_sw2/utils/errors"
 	"github.com/karlseguin/ccache/v2"
-	"github.com/pedrofernandezmz/Arq-Software2/dtos"
-	e "github.com/pedrofernandezmz/Arq-Software2/utils/errors"
 )
 
 type RepositoryCCache struct {
